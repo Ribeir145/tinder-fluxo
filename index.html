@@ -13,6 +13,7 @@
             }
             .side-bar{
                 width: 20%;
+                min-width: 320px;
                 height: 100%;
                 background-color: #ffffff;
             }
@@ -25,11 +26,12 @@
             .side-bar .header{
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 height: 70px;
                 background: linear-gradient(to right, #fd2e70, #fe5d3f);
             }
             .header .title{
-                background-color: #e52d61;
+                background-color: rgba(0, 0, 0, 0.1);;
                 color: white;
                 width: max-content; 
                 padding: 5px 8px;
@@ -44,12 +46,17 @@
             }
             .header .icons{
                 display: flex;
+                margin: 5px;
             }
             .header .icons img{
-                width: 32px;
+                width: 24px;
+                padding: 7px;
+                margin: 10px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 100px;
             }
         </style>
-        <link rel="icon" href="./images/heart.png">
+        <link rel="icon" href="./images/fire.svg">
     </head>
     <body>
         <div class="content">
@@ -59,10 +66,12 @@
                         <img src="./images/logo.png" width="28px">
                         Fluxo Consultoria
                     </div>
-                    
+                    <div class="icons">
+                        <img src="./images/handbag.svg" >
+                        <img src="./images/shield.svg" >
+                    </div>
                 </div>
-                <div class="icons">
-                </div>
+                
             </div>
             <div class="central">
                 
