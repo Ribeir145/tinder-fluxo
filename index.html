@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" href="./images/fire - Copia.svg">
+        <title>Tinder Fluxo | PAME</title>
         <style>
             body{
                 margin:0px;
@@ -105,13 +107,87 @@
                 background-color: #f0f2f4;
             }
             .central .card{
-                background-color: darkgray;
+                background-color: black;
+                background-image: url(images/profile.png), linear-gradient(#eb01a5, #d13531);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: -100px;
                 height: 580px;
+                min-height: 580px;
                 width: 350px;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
+                color: white;
+            }
+            .central .card .personal-info{
+                min-height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 70%);;
+            }
+            .central .card .primary-info{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                margin: 10px 0px;
+            }
+            .card .primary-info span{
+                margin-left: 15px;
+            }
+            .card .primary-info img{
+                width: 20px;
+                margin-left: 15px;
+            }
+            .central .card .secondary-info{
+                background: linear-gradient();
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 0px;
+                font-size: 11pt;
+            }
+            .card .secondary-info .activity{
+                margin-left: 15px;
+                max-width: 260px;
+            }
+            .secondary-info .activity .status{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .secondary-info .activity .status span{
+                width: 9px;
+                height: 9px;
+                border-radius: 10px;
+                background-color: #2ef489;
+                margin-right: 6px;
+            }
+            .card .secondary-info img{
+                width: 25px;
+                margin-right: 30px;
+            }
+            .card .actions{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 10px 15px;
+                margin-bottom: 20px;
+            }
+            .card .actions img{
+                width: 26px;
+                border-style: solid;
+                border-radius: 100px;
+                border-width: 2px;
+            }
+            .card .actions .even{
+                padding: 15px;
+            }
+            .card .actions .odd{
+                padding: 10px;
             }
             .central .footer{
                 margin-bottom: 50px;
@@ -147,7 +223,6 @@
                 border-radius: 5px;
             }
         </style>
-        <link rel="icon" href="./images/fire.svg">
     </head>
     <body>
         <div class="content">
@@ -186,8 +261,31 @@
             </div>
             <div class="central">
                 <div class="card">
-                    card
-                </div>
+                    <div class="personal-info">
+                    <div class="primary-info">
+                        <span style="font-size: xx-large;">Victor Ribeiro</span>
+                        <span style="font-size: x-large;">21</span>
+                        <img src="./images/verified.png">
+                    </div>
+                    <div class="secondary-info">
+                        <div class="activity">
+                            <div class="status">
+                                <span></span>
+                                Online recentemente
+                            </div>
+                            <span>Engenharia de Computação e Informação - 4º Período</span>
+                        </div>
+                        <img src="images/info.png">
+                    </div>
+                    <div class="actions">
+                        <img class="odd" src="./images/return.svg" style="border-color: #5d5f62;">
+                        <img class="even" src="./images/x.svg" style="border-color: #701f28;">
+                        <img class="odd" src="./images/star.svg" style="border-color: #214871;">
+                        <img class="even" src="./images/heart.svg" style="border-color: #105c38;">
+                        <img class="odd" src="./images/lightning.svg" style="border-color: #47066b;">
+                    </div>
+                    </div>
+                </div>               
                 <div class="footer">
                     <span>
                         OCULTAR
