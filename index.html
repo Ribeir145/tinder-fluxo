@@ -4,7 +4,7 @@
         <style>
             body{
                 margin:0px;
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             .content{
                 display: flex;
@@ -13,9 +13,11 @@
             }
             .side-bar{
                 width: 20%;
-                min-width: 320px;
+                min-width: 330px;
                 height: 100%;
                 background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
             }
             .central{
                 display: flex;
@@ -55,6 +57,50 @@
                 background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 100px;
             }
+            .side-bar .slide{
+                display: flex;
+                height: 30px;
+                padding: 7px;
+                align-items: center;
+            }
+            .slide .option{
+                margin: 0px 12px;
+                padding: 0px 8px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.8);
+            }
+            .slide .selected{
+                border-bottom: solid #fd2e70;
+            }
+            .side-bar .info{
+                margin-top: auto;
+                margin-bottom: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .side-bar .info div{
+                margin: 10px 0px;
+            }
+            .side-bar .info .card{
+                width: 120px;
+                height: 170px;
+                border-radius: 10px;
+                background: linear-gradient(to right, #fd2e70, #fe5d3f);
+                box-shadow: 10px 15px 8px rgba(92, 91, 91, 0.2);
+            }
+            .side-bar .info .question{
+                font-weight: bold;
+                font-size: x-large;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                max-width: 290px;
+            }
+            .side-bar .info .review{
+                text-align: center;
+                color: rgba(0, 0, 0, 0.7);
+                max-width: 290px;
+            }
         </style>
         <link rel="icon" href="./images/fire.svg">
     </head>
@@ -71,7 +117,28 @@
                         <img src="./images/shield.svg" >
                     </div>
                 </div>
-                
+                <div class="slide">
+                    <div class="option selected">
+                        Matches
+                    </div>
+                    <div class="option">
+                        Mensagens
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="card">
+                    </div>
+                    <div class="question">
+                        O que está achando do PAME?
+                    </div>
+                    <div class="review">
+                        Estou adorando a experiência proporcionada pelo PAME.
+                        Tem sido uma oportunidade muito grande de entender o que eu espero
+                        do meu futuro acadêmico e profissional. Além disso, esses primeiros
+                        dias de capacitação foram de grande aprendizado. Acredito que os
+                        próximos serão ainda melhores!
+                    </div>
+                </div>
             </div>
             <div class="central">
                 
